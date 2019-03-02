@@ -16,7 +16,7 @@ class ImageMark(object):
         elif position=='center':
             mark_pos=((img_width-2*self.margin-mark_width)/2,(img_height-2*self.margin-mark_height)/2)
         elif position=='random':
-            mark_pos=(random.randint(self.margin,img_width-self.margin),random.randint(self.margin,img_height-self.margin))
+            mark_pos=(random.randint(self.margin,img_width--mark_width-self.margin),random.randint(self.margin,img_height-mark_height-self.margin))
         else:
             print('using default position')
             mark_pos=(self.margin,self.margin)
